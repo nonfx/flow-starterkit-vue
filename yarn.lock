@@ -205,10 +205,18 @@
     "@babel/helper-validator-identifier" "^7.18.6"
     to-fast-properties "^2.0.0"
 
-"@cldcvr/flow-core@*", "@cldcvr/flow-core@^0.3.5":
+"@cldcvr/flow-core@*":
   version "0.3.5"
   resolved "https://pkgs.dev.azure.com/cldcvrdevusa/_packaging/FlowLibraryFeed/npm/registry/@cldcvr/flow-core/-/flow-core-0.3.5.tgz#dc5ac70e38781e2375d24a02339611f993dffe98"
   integrity sha1-3FrHDjh4HiN10koCM5YR+ZPf/pg=
+  dependencies:
+    axios "^0.27.2"
+    lit "^2.2.4"
+
+"@cldcvr/flow-core@^0.3.6":
+  version "0.3.6"
+  resolved "https://pkgs.dev.azure.com/cldcvrdevusa/_packaging/FlowLibraryFeed/npm/registry/@cldcvr/flow-core/-/flow-core-0.3.6.tgz#d9754af6a66a6475a790ccfab2dac9b442ae9532"
+  integrity sha1-2XVK9qZqZHWnkMz6strJtEKulTI=
   dependencies:
     axios "^0.27.2"
     lit "^2.2.4"
