@@ -1,5 +1,6 @@
 <template>
   <f-div width="100%" height="100%" state="default">
+    <!-- navigate to router/index.ts for further info-->
     <router-view />
   </f-div>
 </template>

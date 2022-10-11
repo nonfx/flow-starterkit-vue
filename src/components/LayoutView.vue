@@ -1,6 +1,15 @@
 <template>
-  <f-div direction="column" padding="none" height="100%" state="default">
+  <!-- starterkit-vue -->
+  <f-div
+    direction="column"
+    padding="none"
+    height="100%"
+    state="default"
+    id="starterkit-vue"
+  >
+    <!-- don't show this top-navbar if screen size is less than 600px in responsiveness -->
     <span v-if="openSidebar && checkWindowSizeStatus"></span>
+    <!-- top-nav snippet start -->
     <f-div
       v-else
       align="middle-left"
@@ -9,10 +18,16 @@
       padding="medium"
       variant="block"
       state="default"
-      id="main-navbar"
+      id="top-nav"
       height="hug-content"
     >
-      <f-div align="middle-left" gap="small" width="hug-content">
+      <!-- section-left start-->
+      <f-div
+        align="middle-left"
+        gap="small"
+        width="hug-content"
+        id="section-left"
+      >
         <f-icon
           source="i-hamburger"
           size="large"
@@ -25,23 +40,32 @@
           size="large"
         ></f-icon>
       </f-div>
+      <!-- section-left end-->
+      <!-- section-middle start -->
       <f-div
         align="middle-left"
         gap="small"
         width="fill-container"
         class="not-responsive-header"
+        id="section-middle"
       >
+        <!-- left swappable section start -->
         <f-icon source="i-arrow-left" size="small" :clickable="true"></f-icon>
         <f-text variant="heading" size="x-small" weight="regular">
           Home / Foundation
         </f-text>
+        <!-- left swappable section end -->
       </f-div>
+      <!-- section-middle end-->
+      <!-- section-bottom start-->
       <f-div
         align="middle-right"
         gap="medium"
         width="hug-content"
         class="responsive-width-change"
+        id="section-bottom"
       >
+        <!-- right swappable section start -->
         <f-icon-button
           icon="i-search"
           size="small"
@@ -84,11 +108,14 @@
           state="neutral"
         ></f-icon-button>
         <MenuPopover />
+        <!-- right swappable section end -->
       </f-div>
+      <!-- section-bottom end-->
     </f-div>
-
-    <f-div padding="none">
-      <!-- template snippet to be copied - start-->
+    <!-- top-nav snippet end -->
+    <!-- body section start -->
+    <f-div padding="none" id="body">
+      <!-- side-nav section start-->
       <f-div
         align="top-center"
         border="small solid default right"
@@ -99,7 +126,9 @@
         :class="openSidebar ? 'mobile-view-responsive' : 'hide-in-mobile-view'"
         state="default"
         overflow="hidden"
+        id="side-nav"
       >
+        <!-- section-top start -->
         <f-div
           padding="small"
           gap="small"
@@ -108,6 +137,7 @@
           :direction="openSidebar ? 'row' : 'column'"
           state="default"
           overflow="hidden"
+          id="section-top"
         >
           <f-icon
             :source="openSidebar ? 'i-hamburger-close' : 'i-hamburger'"
@@ -123,12 +153,15 @@
             state="primary"
           ></f-icon-button>
         </f-div>
+        <!-- section-top end -->
+        <!-- section-middle start -->
         <f-div
           padding="none"
           direction="column"
           align="top-left"
           overflow="scroll"
           class="remove-scrollbar"
+          id="section-middle"
         >
           <f-div
             v-for="item in [0]"
@@ -158,6 +191,8 @@
             </f-text>
           </f-div>
         </f-div>
+        <!-- section-middle end -->
+        <!-- section-bottom start -->
         <f-div
           :padding="openSidebar ? 'none' : 'small'"
           direction="column"
@@ -165,6 +200,7 @@
           height="hug-content"
           border="small solid default top"
           state="default"
+          id="section-bottom"
         >
           <f-div
             v-for="item in [0]"
@@ -192,10 +228,14 @@
             </f-text>
           </f-div>
         </f-div>
+        <!-- section-bottom end -->
       </f-div>
-      <slot />
+      <!-- side-nav section end -->
+      <slot /><!-- slot of main body content -->
     </f-div>
+    <!-- body section end -->
   </f-div>
+  <!-- starterkit-vue -->
 </template>
 
 <script lang="ts">
@@ -225,57 +265,53 @@ export default defineComponent({
 </script>
 
 <style>
-#main-navbar .not-responsive-icon-group {
+#top-nav .not-responsive-icon-group {
   width: inherit;
 }
-.red {
-  background-color: red !important;
-  width: 200px !important;
-  height: 200px !important;
-}
+
 @media (max-width: 768px) {
-  #main-navbar .responsive-icon-group {
+  #top-nav .responsive-icon-group {
     width: inherit;
   }
-  #main-navbar .not-responsive-icon-group {
+  #top-nav .not-responsive-icon-group {
     display: none;
   }
 }
 @media (min-width: 768px) {
-  #main-navbar .responsive-icon-group {
+  #top-nav .responsive-icon-group {
     display: none;
   }
-  #main-navbar .not-responsive-icon-group {
+  #top-nav .not-responsive-icon-group {
     width: inherit;
   }
 }
 @media (max-width: 992px) {
-  #main-navbar .show-search-icon {
+  #top-nav .show-search-icon {
     width: inherit;
   }
 }
 @media (min-width: 992px) {
-  #main-navbar .show-search-icon {
+  #top-nav .show-search-icon {
     display: none;
   }
 }
 @media (min-width: 600px) {
-  #main-navbar .not-responsive-header {
+  #top-nav .not-responsive-header {
     width: inherit;
   }
-  #main-navbar .responsive-header {
+  #top-nav .responsive-header {
     display: none;
   }
 }
 @media (max-width: 600px) {
-  #main-navbar .not-responsive-header {
+  #top-nav .not-responsive-header {
     display: none;
   }
-  #main-navbar .responsive-width-change {
+  #top-nav .responsive-width-change {
     flex: 1 1 !important;
     max-width: 100% !important;
   }
-  #main-navbar .responsive-header {
+  #top-nav .responsive-header {
     width: inherit;
   }
 }

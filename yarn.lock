@@ -213,11 +213,12 @@
     axios "^0.27.2"
     lit "^2.2.4"
 
-"@cldcvr/flow-core@^0.3.6":
-  version "0.3.6"
-  resolved "https://pkgs.dev.azure.com/cldcvrdevusa/_packaging/FlowLibraryFeed/npm/registry/@cldcvr/flow-core/-/flow-core-0.3.6.tgz#d9754af6a66a6475a790ccfab2dac9b442ae9532"
-  integrity sha1-2XVK9qZqZHWnkMz6strJtEKulTI=
+"@cldcvr/flow-core@^0.4.6":
+  version "0.4.6"
+  resolved "https://pkgs.dev.azure.com/cldcvrdevusa/_packaging/FlowLibraryFeed/npm/registry/@cldcvr/flow-core/-/flow-core-0.4.6.tgz#2ae64d08c1011ee6b8abc24b310f44269f0d063c"
+  integrity sha1-KuZNCMEBHua4q8JLMQ9EJp8NBjw=
   dependencies:
+    "@floating-ui/dom" "^1.0.2"
     axios "^0.27.2"
     lit "^2.2.4"
 
@@ -242,6 +243,18 @@
     js-yaml "^3.13.1"
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
+
+"@floating-ui/core@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-1.0.1.tgz#00e64d74e911602c8533957af0cce5af6b2e93c8"
+  integrity sha512-bO37brCPfteXQfFY0DyNDGB3+IMe4j150KFQcgJ5aBP295p9nBGeHEs/p0czrRbtlHq4Px/yoPXO/+dOCcF4uA==
+
+"@floating-ui/dom@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@floating-ui/dom/-/dom-1.0.2.tgz#c5184c52c6f50abd11052d71204f4be2d9245237"
+  integrity sha512-5X9WSvZ8/fjy3gDu8yx9HAA4KG1lazUN2P4/VnaXLxTO9Dz53HI1oYoh1OlhqFNlHgGDiwFX5WhFCc2ljbW3yA==
+  dependencies:
+    "@floating-ui/core" "^1.0.1"
 
 "@hapi/hoek@^9.0.0":
   version "9.3.0"

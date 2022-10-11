@@ -1,5 +1,7 @@
 <template>
+  <!-- LayoutView for top-bar and side-bar -->
   <LayoutView>
+    <!-- BodySection used as a slot inside Layout, which contains the data to be displayed in body -->
     <BodySection></BodySection>
   </LayoutView>
 </template>
