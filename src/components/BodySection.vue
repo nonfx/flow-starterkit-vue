@@ -1,6 +1,14 @@
 <template>
-  <f-div direction="column" padding="none" overflow="wrap">
+  <!-- control panel start -->
+  <f-div
+    data-f-id="control-panel"
+    direction="column"
+    padding="none"
+    overflow="wrap"
+  >
+    <!-- welcome message section start -->
     <f-div
+      data-f-id="welcome message"
       state="subtle"
       align="middle-center"
       direction="column"
@@ -38,7 +46,10 @@
         </f-div>
       </f-div>
     </f-div>
+    <!-- welcome message section end -->
+    <!-- info section start -->
     <f-div
+      data-f-id="info-sections"
       padding="x-large"
       gap="x-large"
       align="middle-left"
@@ -110,7 +121,9 @@
         </f-div>
       </f-div>
     </f-div>
+    <!-- info section end -->
   </f-div>
+  <!-- control panel end -->
 </template>
 
 <script lang="ts">

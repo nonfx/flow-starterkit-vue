@@ -20,6 +20,5 @@ The purpose of the starter kits is to get a new frontend project up and running 
 
 # Getting started
 1. Create a new repository from flow-starterkit-vue ```https://github.com/cldcvr/flow-starterkit-vue/generate```
-2. Clone and install the new repo ```yarn install``
+2. Clone and install the new repo ```yarn install```
 3. Development ```yarn start```
-4. Build ```yarn build```

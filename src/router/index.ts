@@ -5,6 +5,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "home",
+    //This HomeView is the Component for layouting the starter-kit. Navigate to this in views/HomeView.vue
     component: HomeView,
   },
 ];
