@@ -1,7 +1,7 @@
 <template>
-  <!-- LayoutView for top-bar and side-bar -->
+  <!-- LayoutView for top-bar and side-bar. Navigate to components/LayoutView.vue -->
   <LayoutView>
-    <!-- BodySection used as a slot inside Layout, which contains the data to be displayed in body -->
+    <!-- BodySection used as a slot inside Layout, which contains the data to be displayed in body. Navigate to components/BodySection.vue -->
     <BodySection></BodySection>
   </LayoutView>
 </template>

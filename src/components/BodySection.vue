@@ -1,6 +1,11 @@
 <template>
   <!-- control panel start -->
-  <f-div direction="column" padding="none" overflow="wrap" id="control-panel">
+  <f-div
+    direction="column"
+    padding="none"
+    overflow="wrap"
+    data-f-id="control-panel"
+  >
     <!-- welcome message section start -->
     <f-div
       state="subtle"
@@ -8,7 +13,7 @@
       direction="column"
       gap="large"
       overflow="wrap"
-      id="welcome message"
+      data-f-id="welcome message"
     >
       <f-div padding="none" align="middle-center" height="hug-content">
         <f-pictogram
@@ -49,7 +54,7 @@
       align="middle-left"
       overflow="wrap"
       class="bottom-section"
-      id="info-sections"
+      data-f-id="info-sections"
     >
       <f-div
         v-for="item in codebase"
