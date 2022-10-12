@@ -1,19 +1,19 @@
 <template>
   <!-- control panel start -->
   <f-div
+    data-f-id="control-panel"
     direction="column"
     padding="none"
     overflow="wrap"
-    data-f-id="control-panel"
   >
     <!-- welcome message section start -->
     <f-div
+      data-f-id="welcome message"
       state="subtle"
       align="middle-center"
       direction="column"
       gap="large"
       overflow="wrap"
-      data-f-id="welcome message"
     >
       <f-div padding="none" align="middle-center" height="hug-content">
         <f-pictogram
@@ -49,12 +49,12 @@
     <!-- welcome message section end -->
     <!-- info section start -->
     <f-div
+      data-f-id="info-sections"
       padding="x-large"
       gap="x-large"
       align="middle-left"
       overflow="wrap"
       class="bottom-section"
-      data-f-id="info-sections"
     >
       <f-div
         v-for="item in codebase"

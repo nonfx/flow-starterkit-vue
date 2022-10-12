@@ -159,9 +159,10 @@
     </f-div>
     <!-- top-nav end -->
     <!-- body section start -->
-    <f-div padding="none" data-f-id="body">
+    <f-div data-f-id="body" padding="none">
       <!-- side-nav start-->
       <f-div
+        data-f-id="side-nav"
         align="top-center"
         border="small solid default right"
         variant="block"
@@ -171,17 +172,16 @@
         :class="openSidebar ? 'mobile-view-responsive' : 'hide-in-mobile-view'"
         state="secondary"
         overflow="hidden"
-        data-f-id="side-nav"
       >
         <!-- side-nav top start -->
         <f-div
+          data-f-id="side-nav-top"
           padding="small"
           gap="small"
           :align="openSidebar ? 'middle-left' : 'middle-center'"
           height="hug-content"
           :direction="openSidebar ? 'row' : 'column'"
           overflow="hidden"
-          data-f-id="side-nav-top"
         >
           <f-icon
             :source="openSidebar ? 'i-hamburger-close' : 'i-hamburger'"
@@ -200,12 +200,12 @@
         <!-- side-nav top end -->
         <!-- side-nav middle start -->
         <f-div
+          data-f-id="side-nav-middle"
           padding="none"
           direction="column"
           align="top-left"
           overflow="scroll"
           class="remove-scrollbar"
-          data-f-id="side-nav-middle"
         >
           <f-div
             v-for="item in [0]"
@@ -238,12 +238,12 @@
         <!-- side-nav middle end -->
         <!-- side-nav bottom start -->
         <f-div
+          data-f-id="side-nav-bottom"
           :padding="openSidebar ? 'none' : 'small'"
           direction="column"
           :align="openSidebar ? 'bottom-left' : 'top-center'"
           height="hug-content"
           border="small solid default top"
-          data-f-id="side-nav-bottom"
         >
           <f-div
             v-for="item in [0]"
