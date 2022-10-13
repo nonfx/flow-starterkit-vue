@@ -1,4 +1,4 @@
-# @cldcvr/flow-icon
+# Flow starter kit for Vue 3
 
 **About flow**
 Flow is a design framework that aims to be the fastest way to go from prototype to implementation. You can learn more about [@cldcvr/flow-core](https://github.com/cldcvr/flow-core/blob/main/ABOUT.md).
