@@ -37,7 +37,7 @@
           class="responsive-header"
           @click="toggleSidebar()"
         ></f-icon-button>
-        <f-icon source="p-cloudcover-dark" size="large"></f-icon>
+        <f-icon source="p-cloudcover" size="large"></f-icon>
       </f-div>
       <!--This data-f-id=\"top-nav-middle\" is swappable, Find examples in https://flow.cldcvr.com/templates/index.html?path=/docs/top-nav--top-nav-middle-breadcrumb  -->
       <f-div

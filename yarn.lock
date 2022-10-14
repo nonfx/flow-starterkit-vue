@@ -205,7 +205,7 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@cldcvr/flow-core@*", "@cldcvr/flow-core@latest":
+"@cldcvr/flow-core@*":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@cldcvr/flow-core/-/flow-core-1.0.1.tgz#1022e85a9a27fdbb4b1cf12a7bf25fc5a8c2f427"
   integrity sha512-LR9uRsHJOJc6WQA91GjQy2uu8mQG3Wc1EXPdsSGTunMrjisC3VUb2Cuvck5/BTFb+wkiQe5OkSYbVtMebjwgfw==
@@ -214,17 +214,27 @@
     axios "^0.27.2"
     lit "^2.2.4"
 
-"@cldcvr/flow-product-icon@^0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@cldcvr/flow-product-icon/-/flow-product-icon-0.1.7.tgz#a1d59e4399002b9d4efb33b241bce46cf91325e4"
-  integrity sha512-UPFCbcssyHwIBHhwWA8NTr9Y7z2QapYBJ2t05QyjpHgcoqvGscR6ryWA5tKr67JYgZQbRyZ271SHfR0dwnYAeQ==
+"@cldcvr/flow-core@1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@cldcvr/flow-core/-/flow-core-1.0.3.tgz#96866254325ee443345342b961676ddc9a1d1b75"
+  integrity sha512-Enp1o87Mqh5d/FuiKBNb5mQn3Og1OvT82koBdZF3Xla93LAXpJgVdjG/5/4fcEhad0QQ/f6B71pqCC1QR5ecPQ==
+  dependencies:
+    "@floating-ui/dom" "^1.0.2"
+    axios "^0.27.2"
+    lit "^2.2.4"
+    rxjs "^7.5.7"
+
+"@cldcvr/flow-product-icon@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@cldcvr/flow-product-icon/-/flow-product-icon-1.0.1.tgz#d067c26a32f75e88bd3941f930ca0bb90468f61b"
+  integrity sha512-SH12vzNiu+NMB2Lc580sGxQmdDNIHXjmASSWVlIgKzy9OQ0a3HnLnLDTh2YQ0MigAfjNyZopniFbbuiKe281PA==
   dependencies:
     "@cldcvr/flow-core" "*"
 
-"@cldcvr/flow-system-icon@latest":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@cldcvr/flow-system-icon/-/flow-system-icon-0.1.7.tgz#06c07f50f5649894adecf3b5e0e8d726bcd3672b"
-  integrity sha512-8VGgpcLzuPLwSTqiBDOqAmSIANC/Ntpn8IXxuOdsPXisMEfdt6NnWofORHz+gBtcSt39s3VSGgcDBnOhgvnBug==
+"@cldcvr/flow-system-icon@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@cldcvr/flow-system-icon/-/flow-system-icon-1.0.0.tgz#0deec668b328fba9700d83bd44cd288330de6f19"
+  integrity sha512-j/tVwdxJU8VAhb/bOpuG0Id+frr9SqzR7YhNiqPFkPk6g4r2v97E3UVZaQUkQruXKfzgPo09y22VwwnDHgOOIQ==
   dependencies:
     "@cldcvr/flow-core" "*"
 
@@ -4329,6 +4339,13 @@ run-parallel@^1.1.9:
   dependencies:
     queue-microtask "^1.2.2"
 
+rxjs@^7.5.7:
+  version "7.5.7"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.5.7.tgz#2ec0d57fdc89ece220d2e702730ae8f1e49def39"
+  integrity sha512-z9MzKh/UcOqB3i20H6rtrlaE/CgjLOvheWK/9ILrbhROGTweAi1BaFsTT9FbwZi5Trr1qNRs+MXkhmR06awzQA==
+  dependencies:
+    tslib "^2.1.0"
+
 safe-buffer@5.1.2, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
@@ -4886,7 +4903,7 @@ tslib@^1.8.1:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
-tslib@^2.0.3:
+tslib@^2.0.3, tslib@^2.1.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.4.0.tgz#7cecaa7f073ce680a05847aa77be941098f36dc3"
   integrity sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==

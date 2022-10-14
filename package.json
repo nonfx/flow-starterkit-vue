@@ -9,9 +9,9 @@
     "start": "vue-cli-service serve"
   },
   "dependencies": {
-    "@cldcvr/flow-core": "latest",
-    "@cldcvr/flow-product-icon": "^0.1.7",
-    "@cldcvr/flow-system-icon": "latest",
+    "@cldcvr/flow-core": "1.0.3",
+    "@cldcvr/flow-product-icon": "1.0.1",
+    "@cldcvr/flow-system-icon": "1.0.0",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3"
   },
