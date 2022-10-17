@@ -214,10 +214,10 @@
     axios "^0.27.2"
     lit "^2.2.4"
 
-"@cldcvr/flow-core@1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@cldcvr/flow-core/-/flow-core-1.0.3.tgz#96866254325ee443345342b961676ddc9a1d1b75"
-  integrity sha512-Enp1o87Mqh5d/FuiKBNb5mQn3Og1OvT82koBdZF3Xla93LAXpJgVdjG/5/4fcEhad0QQ/f6B71pqCC1QR5ecPQ==
+"@cldcvr/flow-core@1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@cldcvr/flow-core/-/flow-core-1.0.5.tgz#8372ca87243734832e089b81a85955f1b7609e47"
+  integrity sha512-0BoJ/hcUFZmwpuI1PuhNWaIJol7eRWyGqUHurIqCdCZF80VnOq0uSbLx0HFDFCXzCVXeyPdJUMeL8Z4+jgIKMQ==
   dependencies:
     "@floating-ui/dom" "^1.0.2"
     axios "^0.27.2"
