@@ -19,6 +19,16 @@ The purpose of the starter kits is to get a new frontend project up and running 
 * [Swappable templates](https://flow.cldcvr.com/templates/index.html)
 
 # Getting started
-1. Create a new repository from flow-starterkit-vue ```https://github.com/cldcvr/flow-starterkit-vue/generate```
-2. Clone and install the new repo ```yarn install```
-3. Development ```yarn start```
+1. Create a new repository from flow-starterkit-vue by clicking on `Use this template` as shown in following screenshot.
+
+2. Enter you project name and click on `Create repository from template`, It will take few seconds.
+
+3. After repository creation copy SSH url for cloning.
+
+4. clone repo in your respective directory.
+
+5. Now got you project by using `cd <your project name>`
+
+6. Install all dependencies by using `yarn install`.
+
+7. To run execute `yarn start`.
