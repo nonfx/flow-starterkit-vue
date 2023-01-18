@@ -18,7 +18,7 @@ The starter enables you to standup a new frontend project with all the bells and
 <br/>
 <br/>
 
-**Step 2. Enter the required details below and click on `Create repository from template`.** This may take a few seconds.
+**Step 2. Enter the required details below and click on `Create a new repository`.** This may take a few seconds.
 
 <kbd>
 <img src="https://user-images.githubusercontent.com/67629551/212258163-f767db22-3d47-4e08-a17c-b1f71ea58457.png">
