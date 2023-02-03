@@ -1,4 +1,13 @@
 {
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.renderWhitespace": "none",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": false,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   "[mdx]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
