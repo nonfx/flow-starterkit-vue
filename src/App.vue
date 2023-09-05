@@ -4,7 +4,3 @@
     <router-view />
   </f-div>
 </template>
-
-<style>
-@import "@cldcvr/flow-core/dist/style.css";
-</style>

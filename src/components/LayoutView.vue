@@ -191,7 +191,7 @@
           ></f-icon>
           <f-icon-button
             icon="i-icon"
-            size="large"
+            size="medium"
             variant="round"
             type="transparent"
             state="primary"
@@ -328,6 +328,8 @@ export default defineComponent({
 <style>
 .top-nav .not-responsive-icon-group {
   width: inherit;
+  /**responsive broke*/
+  display: none;
 }
 
 @media (max-width: 768px) {
